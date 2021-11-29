@@ -6,21 +6,21 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="body">
-    <div class="priority-matrix">
+    <header class="priority-matrix">
       <img class="priority-img" src="./eisenhower-matrix.jpg">
       <a class="priority-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="app">
-      <p id="add-task-form">
-        <label class="section-title new-task-title" for="new-task">Add Item</label>
-        <div class="task-wrapper">
+    </header>
+    <main class="app">
+      <article id="add-task-form">
+        <h3 class="section-title new-task-title" for="new-task">Add Item</h3>
+        <section class="task-wrapper">
           <input id="new-task"class="task task-input" type="text">
           <button class="btn">Add</button>
-        </div>
-      </p>
+        </section>
+      </article>
       <h3 class="section-title">Todo</h3>
-      <ul id="incomplete-tasks">
-        <li class="task-item">
+      <article id="incomplete-tasks">
+        <section class="task-item">
           <input class="check-task" type="checkbox">
           <label class="task label-task">Pay Bills</label>
           <input type="text" class="task task-input">
@@ -28,8 +28,8 @@
           <button class="delete btn">
             <img class="delete-img" src="./remove.svg">
           </button>
-        </li>
-        <li class="edit-task task-item">
+        </section>
+        <section class="edit-task task-item">
           <input class="check-task" type="checkbox">
           <label class="task label-task">Go Shopping</label>
           <input type="text" value="Go Shopping" class="task task-input">
@@ -37,11 +37,11 @@
           <button class="delete btn">
             <img class="delete-img" src="./remove.svg">
           </button>
-        </li>
-      </ul>
+        </section>
+      </article>
       <h3 class="section-title">Completed</h3>
-      <ul id="completed-tasks">
-        <li class="task-item">
+      <article id="completed-tasks">
+        <section class="task-item">
           <input class="check-task" type="checkbox" checked>
           <label class="task label-task">See the Doctor</label>
           <input type="text" class="task task-input">
@@ -49,9 +49,9 @@
           <button class="delete btn">
             <img class="delete-img" src="./remove.svg">
           </button>
-        </li>
-      </ul>
-    </div>
+        </section>
+      </article>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
